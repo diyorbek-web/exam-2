@@ -1,0 +1,37 @@
+.card_scroll {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  padding: 0 0px 0 140px;
+  @media (max-width: 767px) {
+    padding: 0 0 0 70px;
+  }
+  @media (max-width: 375px) {
+    padding: 0 0 0 30px;
+  }
+  .descrip {
+    h2 {
+      @include section_title;
+    }
+    p {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -1%;
+      color: #777e90;
+      @media (max-width: 375px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .carusel {
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    overflow: scroll;
+    padding: 0 0 20px;
+    .card {
+      @extend %card_style;
+    }
+  }
+}

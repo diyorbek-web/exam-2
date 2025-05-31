@@ -1,0 +1,49 @@
+%card_style {
+  position: relative;
+  div {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+  }
+  img {
+    width: 330px;
+    height: 250px;
+    border-radius: 15px;
+    @media (max-width: 767px) {
+      width: 260px;
+      height: 337px;
+    }
+    @media (max-width: 375px) {
+      width: 260px;
+      height: 250px;
+    }
+  }
+  span {
+    margin-top: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    display: block;
+  }
+  p {
+    margin-top: 8px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: $bottom_color;
+  }
+}

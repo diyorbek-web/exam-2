@@ -1,7 +1,55 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.explore .carusel .card, .card_scroll .carusel .card {
+  position: relative;
+}
+.explore .carusel .card div, .card_scroll .carusel .card div {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 15px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: white;
+}
+.explore .carusel .card img, .card_scroll .carusel .card img {
+  width: 330px;
+  height: 250px;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .explore .carusel .card img, .card_scroll .carusel .card img {
+    width: 260px;
+    height: 337px;
+  }
+}
+@media (max-width: 375px) {
+  .explore .carusel .card img, .card_scroll .carusel .card img {
+    width: 260px;
+    height: 250px;
+  }
+}
+.explore .carusel .card span, .card_scroll .carusel .card span {
+  margin-top: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  display: block;
+}
+.explore .carusel .card p, .card_scroll .carusel .card p {
+  margin-top: 8px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #777e90;
 }
 
 nav {
@@ -309,42 +357,6 @@ main .title button {
   overflow: scroll;
   padding: 0 0 20px;
 }
-.card_scroll .carusel .card img {
-  width: 330px;
-  height: 250px;
-  border-radius: 15px;
-}
-@media (max-width: 767px) {
-  .card_scroll .carusel .card img {
-    width: 260px;
-    height: 337px;
-  }
-}
-@media (max-width: 375px) {
-  .card_scroll .carusel .card img {
-    width: 260px;
-    height: 250px;
-  }
-}
-.card_scroll .carusel .card span {
-  margin-top: 12px;
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  display: block;
-}
-.card_scroll .carusel .card p {
-  margin-top: 8px;
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  color: #777e90;
-}
-
 .rent {
   margin-top: 150px;
   padding: 0 140px;
@@ -381,12 +393,12 @@ main .title button {
   color: #777e90;
 }
 .rent .left h2 {
-  margin-top: 16px;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -2%;
+  margin-top: 16px;
   margin-bottom: 30px;
 }
 @media (max-width: 375px) {
@@ -438,12 +450,12 @@ main .title button {
 }
 @media (max-width: 767px) {
   .explore {
-    padding: 0 80px;
+    padding: 80px;
   }
 }
 @media (max-width: 375px) {
   .explore {
-    padding: 0 30px;
+    padding: 30px;
   }
 }
 .explore h2 {
@@ -472,38 +484,155 @@ main .title button {
   gap: 30px;
   padding: 0 0 20px;
 }
-.explore .carusel .card img {
-  width: 330px;
-  height: 250px;
-  border-radius: 15px;
+.amazing {
+  margin-top: 100px;
+}
+.amazing .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.amazing .top p {
+  color: #777e90;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.amazing .top h2 {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2%;
+}
+@media (max-width: 375px) {
+  .amazing .top h2 {
+    font-size: 40px;
+  }
+}
+.amazing .top button {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 16px 24px;
+  background-color: #3b71fe;
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+.amazing .bottom {
+  margin-top: 70px;
+  padding: 0 140px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 70px;
 }
 @media (max-width: 767px) {
-  .explore .carusel .card img {
-    width: 260px;
-    height: 337px;
+  .amazing .bottom {
+    padding: 0 0px;
   }
 }
 @media (max-width: 375px) {
-  .explore .carusel .card img {
-    width: 260px;
-    height: 250px;
+  .amazing .bottom {
+    flex-direction: column;
+    align-items: center;
   }
 }
-.explore .carusel .card span {
-  margin-top: 12px;
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  display: block;
+.amazing .bottom .contact_card {
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 40px 32px;
+  background-color: #f4f5f6;
 }
-.explore .carusel .card p {
-  margin-top: 8px;
+@media (max-width: 767px) {
+  .amazing .bottom .contact_card {
+    width: 300px;
+  }
+}
+.amazing .bottom .contact_card img {
+  width: 45px;
+  height: 45px;
+}
+.amazing .bottom .contact_card span {
+  display: block;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-top: 32px;
+}
+.amazing .bottom .contact_card p {
+  margin-top: 16px;
   font-family: Poppins;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0%;
   color: #777e90;
+}
+.amazing .waves {
+  padding: 0 140px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .amazing .waves {
+    padding: 0;
+  }
+}
+.amazing .waves .topp {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .amazing .waves .topp {
+    flex-direction: column;
+  }
+  .amazing .waves .topp .border_h {
+    display: none;
+  }
+}
+.amazing .waves .topp .border_h {
+  background-color: #b1b5c3;
+  width: 1px;
+  height: 100px;
+}
+.amazing .waves .topp div {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .amazing .waves .topp div {
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 1px solid #b1b5c3;
+  }
+}
+.amazing .waves .border {
+  width: 100%;
+  height: 1px;
+  background-color: #b1b5c3;
+}
+@media (max-width: 767px) {
+  .amazing .waves .border {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

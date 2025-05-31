@@ -1,0 +1,29 @@
+.explore {
+  @include responsive-padding(0 140px, 80px, 30px);
+  .carusel {
+    .card {
+      @extend %card_style;
+    }
+  }
+
+  h2 {
+    @include section_title;
+  }
+  p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1%;
+  }
+  .carusel {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 0 20px;
+    .card {
+      @extend %card_style;
+    }
+  }
+}

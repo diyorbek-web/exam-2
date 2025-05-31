@@ -1,0 +1,22 @@
+@mixin section_title() {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2%;
+  @media (max-width: 375px) {
+    font-size: 40px;
+  }
+}
+
+@mixin responsive-padding($desktop, $laptop, $mobile) {
+  padding: $desktop;
+
+  @media (max-width: 767px) {
+    padding: $laptop;
+  }
+
+  @media (max-width: 375px) {
+    padding: $mobile;
+  }
+}
